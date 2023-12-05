@@ -1,0 +1,31 @@
+header {
+  position: relative;
+  padding: 12px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar ul li {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 24px 6px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Varela Round", sans-serif;
+}

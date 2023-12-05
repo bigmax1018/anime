@@ -1,0 +1,110 @@
+.phone-input .form-control {
+  width: 100% !important;
+}
+
+.phone-input-error .special-label,
+.phone-input-error .form-control {
+  color: rgb(183, 33, 54) !important;
+}
+
+.phone-input .phone-input-dropdown li {
+  width: 100%;
+  height: 100%;
+}
+
+.phone-input-helper-text {
+  margin-top: 3px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 1.66;
+  margin-left: 14px;
+  font-size: 0.75rem;
+  margin-right: 14px;
+  color: rgb(183, 33, 54);
+  font-family: "Inter", sans-serif;
+}
+
+.react-tel-input .form-control {
+  border: 1px solid #ffffff !important;
+  border-radius: 0;
+  background: transparent;
+  border-radius: 0;
+  padding-top: 18px;
+  padding-bottom: 5.5px;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.react-tel-input .form-control:hover {
+  background-color: transparent;
+}
+
+.react-tel-input .form-control:focus {
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.53); */
+  border: 0;
+  /* border-bottom: 1px solid #f5d312; */
+  /* Filled  */
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Filled  */
+.react-tel-input .selected-flag .flag {
+  margin-top: -5px;
+  margin-left: 2px;
+}
+
+
+
+.react-tel-input .selected-flag .arrow, .react-tel-input .selected-flag:focus .arrow {
+  border-top: 4px solid #ffffff;
+}
+.react-tel-input .selected-flag .arrow.up {
+  border-bottom: 4px solid #ffffff;
+}
+
+.react-tel-input .country-list .country .dial-code {
+  color: #000 !important;
+}
+
+.react-tel-input .country-list .search-box {
+  border-color: #000 !important;
+}
+
+.react-tel-input .special-label {
+  top: 3px;
+  left: 8px;
+  background: transparent;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.country-name {
+  color: #000;
+}
+
+.search-box {
+  border: 0;
+  border-radius: 0;
+  text-transform: capitalize;
+  color: black !important;
+}
+
+.react-tel-input .country-list .search-box,
+.react-tel-input .selected-flag {
+  border-radius: 0 !important;
+}
+
+.react-tel-input .country-list {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.react-tel-input .flag-dropdown.open {
+  left: 0;
+  right: 0;
+}

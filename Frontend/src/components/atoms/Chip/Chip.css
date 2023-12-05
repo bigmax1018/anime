@@ -1,0 +1,10 @@
+.class-badge {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 0;
+    white-space: nowrap;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}

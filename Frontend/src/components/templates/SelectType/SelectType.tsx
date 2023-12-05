@@ -41,6 +41,7 @@ export default function SelectType() {
           // marginTop: "2px",
           marginBottom: "0.83em",
           userSelect: "text",
+          overflow: "hidden",
         }}
       >
         Public
@@ -67,6 +68,7 @@ export default function SelectType() {
           // marginTop: "2px",
           marginBottom: "0.83em",
           userSelect: "text",
+          overflow: "hidden",
         }}
       >
         Private
@@ -85,6 +87,7 @@ export default function SelectType() {
           // marginTop: "2px",
           marginBottom: "0.83em",
           userSelect: "text",
+          overflow: "hidden",
         }}
         onClick={() => {
           dispatch(tabActions.setUpload(true));
@@ -106,6 +109,7 @@ export default function SelectType() {
           // marginTop: "2px",
           marginBottom: "0.83em",
           userSelect: "text",
+          overflow: "hidden",
         }}
         onClick={() => {
 

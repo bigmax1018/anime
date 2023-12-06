@@ -275,8 +275,7 @@ progress {
   /* width: 180px; */
   display: flex;
   margin-right: 6px;
-  /* align-items: center; */
-  margin-top: 24px;
+  align-items: center;
 }
 
 .chat-message img {
@@ -307,8 +306,10 @@ progress {
 
 .bubble {
   padding: 10px;
-  margin-bottom: 5px;
-  display: inline-block;
+  /* margin-bottom: 5px; */
+  /* display: inline-block; */
+  height: 100%;
+  display: flex;
   border: 1px solid #ffffff;
 }
 
@@ -481,7 +482,7 @@ progress {
 .members-list {
   overflow-y: auto;
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
 }
 
 .members-list li {
@@ -491,7 +492,7 @@ progress {
   align-items: center;
   margin-bottom: 10px;
   list-style-type: none;
-  min-height: 80px;
+  min-height: 40px;
   justify-content: space-between;
 }
 

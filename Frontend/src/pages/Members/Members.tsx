@@ -54,7 +54,14 @@ export default function Members({ userId }: any) {
                   </div>
                   <p style={{ textTransform: "capitalize" }}>Anime</p>
                 </div>
-
+                <a href="#" style={{ color: "rgb(255, 255, 255)", 
+                textTransform: "capitalize", 
+                textDecoration: "none", 
+                fontSize: "16px", 
+                fontFamily: "&quot; Varela Round&quot;, sans-serif", 
+                overflow: "hidden"}}>
+                  Anime
+                </a>
               </li>
             )
           }

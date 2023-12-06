@@ -99,7 +99,7 @@ export default function Chat() {
                       paddingLeft: "4px",
                       cursor: "pointer",
                       whiteSpace: "nowrap",
-                      marginTop: "8px"
+                      // marginTop: "8px"
                     }}
                     onClick={() => {
                       if (user && !chat && message?.p_user?._id != undefined) {
@@ -152,7 +152,10 @@ export default function Chat() {
                           : message?.p_user?.race ?? "Anime"}
                       </Link>
                     </p>
-                    <div className="text-message">
+                    <div className="text-message" style={{ 
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                    }}>
                       {edit === index ? (
                         <UpdateMessage message={message.message} />
                       ) : (

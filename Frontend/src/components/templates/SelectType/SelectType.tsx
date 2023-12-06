@@ -21,7 +21,7 @@ export default function SelectType() {
   const videoType = useAppSelector((state) => state.video.type);
 
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: "35px" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "35px", marginLeft: "-1px" }}>
       <button
         onClick={() => {
           dispatch(gifActions.setType("public"));

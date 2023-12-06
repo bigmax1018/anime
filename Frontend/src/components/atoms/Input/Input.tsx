@@ -14,7 +14,8 @@ const CssTextField = styled(TextField)({
   "& .MuiFilledInput-root": {
     backgroundColor: "transparent",
     borderRadius: "0px",
-    border: "1px solid #ffffff",
+    border: "1px solid rgb(255, 255, 255)",
+    height: "47px",
   },
   "& .MuiInputBase-input": {
     height: "1em",
@@ -24,6 +25,8 @@ const CssTextField = styled(TextField)({
   "& .MuiInputLabel-root": {
     color: "white",
     top: "-4px",
+    fontSize: "16px",
+    userSelect: "text",
   },
   "& .MuiFilledInput-root:after, .MuiFilledInput-root:before": {
     display: "none",

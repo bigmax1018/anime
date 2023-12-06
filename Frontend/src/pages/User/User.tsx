@@ -203,7 +203,7 @@ export default function User() {
                 </button>
               </div>
             )}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: upload ? "center" : "normal" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: upload ? "center" : "normal", marginLeft: "-1px" }}>
               {upload ? (
                 <>
                   <UploadBox />

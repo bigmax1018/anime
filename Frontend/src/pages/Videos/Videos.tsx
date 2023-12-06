@@ -96,7 +96,7 @@ export default function Videos() {
       {/* {loading ? (
         <SkeletonLoader />
       ) : ( */}
-      <div className="basic-box" ref={contentRef} style={{ paddingRight: isScrollBarVisible ? (isFirefox ? '7px' : '14px') : '24px' }}>
+      <div className="basic-box" ref={contentRef} style={{ paddingRight: isScrollBarVisible ? (isFirefox ? '7px' : '14px') : '24px', marginLeft: "-1px" }}>
         {upload ? (
           <UploadBox />
         ) : (

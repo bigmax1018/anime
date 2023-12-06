@@ -261,7 +261,16 @@ export default function FileDropZone({ type, uploadType }: any) {
                     ? videoType
                     : ""}
             &nbsp;
-            {tab === "user" ? "Profile Picture" : uploadType}
+            {tab === "user" ? "Profile Picture" 
+            : uploadType === "gifs"
+              ? "Gif"
+              : uploadType === "pictures"
+                ? "Picture"
+                : uploadType === "music"
+                  ? "Music"
+                  : uploadType === "videos"
+                    ? "Video"
+                    : ""}
           </p>
         </div>
       }

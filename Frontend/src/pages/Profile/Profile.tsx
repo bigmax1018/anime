@@ -118,7 +118,7 @@ export default function Profile() {
           </h2>
           <div
             className="basic-box right-section"
-            style={{ height: "calc( 100vh - 164px )" }}
+            style={{ height: "calc( 100vh - 164px )", padding: " 0px 24px" }}
           >
             <Members userId={id} />
           </div>

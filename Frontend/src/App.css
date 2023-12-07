@@ -413,7 +413,7 @@ progress {
   overflow: auto !important;
   border-radius: 0 !important;
   color: white !important;
-  border: 1px solid #ffffff;
+  border-color: #fff !important;
   background-color: transparent !important;
   font-size: 16px !important;
   font-family: "Varela Round", sans-serif !important;

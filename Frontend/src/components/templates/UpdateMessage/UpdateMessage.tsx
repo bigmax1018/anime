@@ -40,29 +40,51 @@ export default function UpdateMessage(message: any) {
   }, []);
 
   return (
-    <textarea
-      ref={textAreaRef}
-      defaultValue={message.message}
-      style={{
-        width: "100%",
-        resize: "none",
-        background: "none",
-        border: "none",
-        fontSize: "16px",
-        lineHeight: 1.4,
-        wordBreak: "break-all",
-        padding: 0,
-      }}
-      rows={1}
-      onChange={(e) => setValue(e.target.value)}
-      onKeyDown={(e: any) => {
-        if (e.keyCode === 13 && !e.shiftKey) {
-          e.preventDefault();
-          // if (user) {
-          updateMessage(e.target.value);
-          // }
-        }
-      }}
-    />
+    <>
+      <textarea
+        ref={textAreaRef}
+        defaultValue={message.message}
+        style={{
+          width: "100%",
+          resize: "none",
+          background: "none",
+          border: "none",
+          fontSize: "16px",
+          lineHeight: 1.4,
+          wordBreak: "break-all",
+          padding: 0,
+          minWidth: "55px",
+          overflow: "hidden",
+          minHeight: "22.39px",
+          position: "absolute",
+          height: "22px",
+        }}
+        rows={1}
+        onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e: any) => {
+          if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault();
+            // if (user) {
+            updateMessage(e.target.value);
+            // }
+          }
+        }}
+      />
+      <div 
+        style={{
+          display: "inline-block",
+          visibility: "hidden",
+          overflow: "hidden",
+          whiteSpace: "pre-wrap",
+          fontSize: "16px",
+          lineHeight: "1.4",
+          wordBreak: "break-all",
+          padding: 0,
+          // maxWidth: "800px",
+        }}
+      >
+      {textAreaRef.current?.value}
+      </div>
+    </>
   );
 }

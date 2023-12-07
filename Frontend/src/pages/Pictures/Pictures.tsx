@@ -84,7 +84,7 @@ export default function Pictures() {
       {/* {loading ? (
         <SkeletonLoader />
       ) : ( */}
-      <div className="basic-box" ref={contentRef} style={{ paddingRight: isScrollBarVisible ? (24 - scrollWidth) + 'px' : '24px' }}>
+      <div className="basic-box" ref={contentRef} style={{ paddingRight: isScrollBarVisible ? (24 - scrollWidth) + 'px' : '24px', marginLeft: "-1px" }}>
         {upload ? (
           <UploadBox />
         ) : (

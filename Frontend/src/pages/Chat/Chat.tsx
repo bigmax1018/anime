@@ -50,7 +50,7 @@ export default function Chat() {
         className="chat-big-box"
         style={{
           height: `calc( 100vh - 330px)`,
-          overflowY: "auto",
+          overflow: "hidden auto",
           paddingRight: "15px",
           marginBottom: "15px",
           display: "flex",
@@ -124,7 +124,7 @@ export default function Chat() {
                 </div>
                 <div
                   className="bubble"
-                  style={{ width: edit === index ? "100%" : "auto" }}
+                  style={{ maxWidth: edit === index ? "100%" : "auto" }}
                 >
                   <div className="bubble-inner">
                     <p style={{ textAlign: "right" }}>

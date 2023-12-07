@@ -14,12 +14,17 @@ const CssTextField = styled(TextField)({
     backgroundColor: "transparent",
     borderRadius: "0px",
     border: "1px solid #ffffff",
+    height: "47px",
+    userSelect: "text",
   },
   "& .MuiInputBase-input": {
     height: "1em",
     color: "white",
     paddingTop: "16px",
     paddingBottom: "5px",
+    fontSize: "16px",
+    userSelect: "text",
+    
   },
   "& .MuiInputLabel-root": {
     color: "white",

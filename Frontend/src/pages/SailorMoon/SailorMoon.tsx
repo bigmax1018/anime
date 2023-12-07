@@ -88,7 +88,7 @@ export default function SailorMoon() {
           Donate
         </button>
       </div>
-      <div style={{marginTop: isFirefox ? "279px" : "259px"}}>
+      <div style={{marginTop: isFirefox ? "273px" : "259px"}}>
         <audio
           controls
           loop

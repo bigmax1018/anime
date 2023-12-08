@@ -127,7 +127,7 @@ export default function Chat() {
                   style={{ maxWidth: edit === index ? "100%" : "auto" }}
                 >
                   <div className="bubble-inner">
-                    <p style={{ textAlign: "right" }}>
+                    <p style={{ textAlign: "right", overflow: "hidden" }}>
                       <Link
                         to={`/profile/${chat
                           ? message.fromSelf

@@ -264,7 +264,7 @@ progress {
 .chat-message {
   display: flex;
   position: relative;
-  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .text-message a {
@@ -305,21 +305,21 @@ progress {
 }
 
 .bubble {
-  padding: 10px;
-  /* margin-bottom: 5px; */
-  /* display: inline-block; */
-  height: 100%;
-  display: flex;
   border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.bubble, .bubble-inner {
+  display: flex;
+  height: 100%;
 }
 
 .bubble-inner {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.bubble-inner div {
+.bubble-inner>div {
   display: flex;
   justify-content: space-between;
 }

@@ -40,12 +40,11 @@ export default function UpdateMessage(message: any) {
   }, []);
 
   return (
-    <>
+      <>
       <textarea
         ref={textAreaRef}
         defaultValue={message.message}
         style={{
-          width: "100%",
           resize: "none",
           background: "none",
           border: "none",
@@ -57,7 +56,8 @@ export default function UpdateMessage(message: any) {
           overflow: "hidden",
           minHeight: "22.39px",
           position: "absolute",
-          height: "22px",
+          width: "100%",
+          height: "100%",
         }}
         rows={1}
         onChange={(e) => setValue(e.target.value)}
@@ -80,7 +80,7 @@ export default function UpdateMessage(message: any) {
           lineHeight: "1.4",
           wordBreak: "break-all",
           padding: 0,
-          // maxWidth: "800px",
+          maxWidth: "800px",
         }}
       >
       {textAreaRef.current?.value}

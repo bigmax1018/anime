@@ -272,7 +272,6 @@ progress {
 }
 
 .chat-user-data {
-  /* width: 180px; */
   display: flex;
   margin-right: 6px;
   align-items: center;

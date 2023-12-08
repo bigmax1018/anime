@@ -38,7 +38,6 @@ export default function UpdateMessage(message: any) {
   useEffect(() => {
     setValue(message);
   }, []);
-
   return (
       <>
       <textarea
@@ -56,11 +55,10 @@ export default function UpdateMessage(message: any) {
           overflow: "hidden",
           minHeight: "22.39px",
           position: "absolute",
-          width: "100%",
-          height: "100%",
         }}
         rows={1}
         onChange={(e) => setValue(e.target.value)}
+      
         onKeyDown={(e: any) => {
           if (e.keyCode === 13 && !e.shiftKey) {
             e.preventDefault();
@@ -70,7 +68,7 @@ export default function UpdateMessage(message: any) {
           }
         }}
       />
-      <div 
+      <div
         style={{
           display: "inline-block",
           visibility: "hidden",

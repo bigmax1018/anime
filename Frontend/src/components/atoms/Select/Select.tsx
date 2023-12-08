@@ -68,7 +68,7 @@ export default function Select({
       select
       fullWidth
       variant="filled"
-      SelectProps={{ MenuProps: { sx: { maxHeight: "300px" } } }}
+      SelectProps={{ MenuProps: { sx: { maxHeight: "535px" } } }}
       {...rest}
       disabled={disabledOnUpdate && id ? true : disabled}
     >

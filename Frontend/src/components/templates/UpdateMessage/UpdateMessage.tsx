@@ -48,7 +48,7 @@ export default function UpdateMessage(message: any) {
           background: "none",
           border: "none",
           fontSize: "16px",
-          lineHeight: 1.4,
+          lineHeight: 1.333,
           wordBreak: "break-all",
           padding: 0,
           minWidth: "55px",

@@ -164,7 +164,14 @@ export default function Chat() {
                             (user?._id && user?._id === message?.p_user?._id || socketId === message?.socketId || message?.fromSelf) &&
                             dispatch(authActions.setEdit(index))
                           }
-                          style={{ wordBreak: "break-all" }}
+                          style={{
+                          overflow: "hidden",
+                          whiteSpace: "pre-wrap",
+                          fontSize: "16px",
+                          lineHeight: "1.4",
+                          wordBreak: "break-all",
+                          padding: "0",
+                          maxWidth: "800px"  }}
                           dangerouslySetInnerHTML={{
                             __html: makeUrlsClickable(message.message),
                           }}

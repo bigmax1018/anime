@@ -216,7 +216,17 @@ export default function FileDropZone({ type, uploadType }: any) {
       getUploadParams={getUploadParams}
       onSubmit={handleSubmit}
       onChangeStatus={handleChangeStatus}
-      submitButtonContent={`Submit ${uploadType}`}
+      inputWithFilesContent = {`Add File`}
+      submitButtonContent={`Submit ${(
+        uploadType === "gifs"
+          ? "Gif"
+          : uploadType === "pictures"
+            ? "Picture"
+            : uploadType === "music"
+              ? "Music"
+              : uploadType === "videos"
+                ? "Video"
+                : "")}`}
       maxFiles={tab === "user" ? 1 : 30}
       accept={
         uploadType === "videos"

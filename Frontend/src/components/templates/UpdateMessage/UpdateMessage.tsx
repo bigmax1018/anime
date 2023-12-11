@@ -75,7 +75,7 @@ export default function UpdateMessage(message: any) {
           overflow: "hidden",
           whiteSpace: "pre-wrap",
           fontSize: "16px",
-          lineHeight: "1.4",
+          lineHeight: 1.4,
           wordBreak: "break-all",
           padding: 0,
           maxWidth: "800px",
